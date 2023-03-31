@@ -1,0 +1,19 @@
+
+.contenedorImagenesInicio{
+    border-bottom: 2rem solid rgb(246, 242, 239);
+    
+}
+
+.imagenInicioPortada{
+    width: 100%;
+}
+
+.imagenInicioPortada img{
+    width: 100%;
+}
+
+
+.imagenesInicio div img{
+    width: 50%;
+    padding: 0;
+}

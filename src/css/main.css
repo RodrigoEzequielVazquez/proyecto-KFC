@@ -1,0 +1,56 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+
+
+body{
+  width: 100%;
+  background-color: #f6f2ef;
+}
+
+header{
+  background-color: #f6f2ef ;
+  width: 100%;
+}
+
+.iconoPrincipal{
+  margin-left: 8rem;
+}
+
+.principalContainer{
+  width: 100%;
+}
+
+.containerMenu{
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cartSection{
+  height: 50%;
+}
+
+.iconoLetras{
+  display: none;
+}
+
+@media screen and (max-width:525px){
+ .expandMenu{
+  width: 70%;
+ }
+  
+}
+
+@media screen and (max-width:991px){
+  header{
+    display: none;
+  }
+  .iconoLetras{
+    display: block;  
+  }
+}

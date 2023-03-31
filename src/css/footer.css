@@ -1,0 +1,65 @@
+.contenedorFooter{
+    padding-top: 1rem;
+    background-color: #fff;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.iconoFooter{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.infoFooter{
+    margin-top: 1.2rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.infoFooter div p{
+    margin: 0;
+}
+
+.containerRedesTerminos{
+    margin-top: 1.2rem;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.redesFooter{
+    width: 15vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.redesFooter img{
+    width: 1rem;
+    height: 1rem;
+}
+
+.redesFooter .facebook{
+    width: 1rem;
+    height: 1.3rem;
+}
+
+.terminosFooter{
+    width: 50vh;
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.tirasRojas{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+
+}
