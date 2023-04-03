@@ -1,0 +1,27 @@
+#containerPromociones{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#bannerPromociones img{
+    width: 100%;
+}
+
+#containerCupones{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.boxCupon{
+    width: 40%;
+    margin: 1rem;
+}
+
+.boxCupon img{
+    width: 100%;
+}

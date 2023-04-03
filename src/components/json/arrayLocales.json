@@ -1,0 +1,73 @@
+[
+    {"id":1 ,"localidad":"Alto Palermo","ubicacion":"Av. Santa Fe 3253. 3er nivel","ciudad":"CABA","telefono": "11 2856-1066"
+    },
+
+    {"id":2 ,"localidad":"Alto Avellaneda","ubicacion":"Güemes 897","ciudad":"Avellaneda","telefono": "11 2856-1066"
+    },
+
+    {"id":3 ,"localidad":"Galerias Pacifico","ubicacion":"Florida y Av. Cordoba","ciudad":"CABA","telefono": "11 2856-1066"
+    },
+
+    {"id":4 ,"localidad":"Unicenter","ubicacion":"Paraná 3745","ciudad":"Martínez","telefono": "11 2856-1066"
+    },
+
+    {"id":5 ,"localidad":"Abasto","ubicacion":"Av. Corrientes 3247","ciudad":"CABA","telefono": "11 2856-1066"
+    },
+
+    {"id":6 ,"localidad":"Obelisco","ubicacion":"Carlos Pellegrini 435","ciudad":"CABA","telefono": "11 2856-1066"
+    },
+
+    {"id":7 ,"localidad":"Terrazas de Mayo","ubicacion":"Cruce de Ruta 8 y Ruta 202","ciudad":"Malvinas Argentinas - San Miguel","telefono": "11 2856-1066"
+    },
+
+    {"id":8 ,"localidad":"DOT Baires Shopping","ubicacion":"Vedia 3600","ciudad":"CABA","telefono": "11 2856-1066"
+    },
+
+    {"id":9 ,"localidad":"La Plata","ubicacion":"Avenida 7 777","ciudad":"La Plata","telefono": "11 2856-1066"
+    },
+
+    {"id":10 ,"localidad":"Solei","ubicacion":"Bernardo de Irigoyen 2647","ciudad":"San Isidro","telefono": "11 2856-1066"
+    },
+
+    {"id":11 ,"localidad":"Avenida Santa Fe","ubicacion":"Avenida Santa Fe 4607","ciudad":"Capital Federal","telefono": "11 2856-1066"
+    },
+
+    {"id":12 ,"localidad":"Plaza Oeste","ubicacion":"Av. Brig. Gral. Juan Manuel de Rosas 658","ciudad":"Castelar","telefono": "11 2856-1066"
+    },
+
+    {"id":13 ,"localidad":"Lanús","ubicacion":"Av. 9 de Julio 1177","ciudad":"Lanús","telefono": "11 2856-1066"
+    },
+
+    {"id":14 ,"localidad":"San Justo","ubicacion":"Ignacio Arieta 3535","ciudad":"San Justo","telefono": "11 2856-1066"
+    },
+
+    {"id":15 ,"localidad":"Monte Grande","ubicacion":"Leandro N Alem 312","ciudad":"Monte Grande","telefono": "11 2856-1066"
+    },
+
+    {"id":16 ,"localidad":"Quilmes Factory","ubicacion":"Avenida Calchaquí 3950","ciudad":"Quilmes","telefono": "11 2856-1066"
+    },
+
+    {"id":17 ,"localidad":"Rosario","ubicacion":"Junín 501","ciudad":"ROSARIO","telefono": "11 2856-1066"
+    },
+
+    {"id":18 ,"localidad":"Mendoza Plaza","ubicacion":"Av. de Acceso Este 3280","ciudad":"Guaymallén","telefono": "11 2856-1066"
+    },
+
+    {"id":19 ,"localidad":"Palmares","ubicacion":"Av. San Martín Sur 2875","ciudad":"Godoy Cruz","telefono": "11 2856-1066"
+    },
+
+    {"id":20 ,"localidad":"Parque Avellaneda","ubicacion":"Av. Buenos Aires - La Plata Km. 9","ciudad":"Avellaneda","telefono": "11 2856-1066"
+    },
+
+    {"id":21 ,"localidad":"TOM","ubicacion":"Ramal Pilar Km 36.5","ciudad":"Tortuguitas","telefono": "11 2856-1066"
+    },
+
+    {"id":22 ,"localidad":"Atlas Caballito","ubicacion":"Avenida Rivadavia 5071","ciudad":"CABA","telefono": "11 2856-1066"
+    },
+
+    {"id":23 ,"localidad":"Cabildo","ubicacion":"Av. Cabildo 2224","ciudad":"CABA","telefono": "11 2856-1066"
+    },
+
+    {"id":24 ,"localidad":"Retiro","ubicacion":"Av. Ramos Mejía 1552 - Estación Ferrocarril San Martin","ciudad":"CABA","telefono": "11 2856-1066"
+    }
+]

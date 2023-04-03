@@ -1,0 +1,50 @@
+#contenedorLocales{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#localesCard{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 18rem;
+    height: 10rem;
+    background-color: white;
+    margin: 1rem;
+}
+
+#localesLocalidad{
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+#localesLocalidad h2{
+    font-size: 120% ;
+    margin: 0;
+}
+
+#localesLocalidad img{
+    width: 3rem;
+    height: 1rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+
+#infoLocales p{
+    margin: 0;
+    margin-left: 1rem;
+    font-size: 85%;
+}
+
+#telefonoLocales{
+    display: flex;
+    justify-content: end;
+    margin-right: 1rem;
+}
+
+#telefonoLocales p{
+    margin: 0;
+    font-size: 85%;
+}

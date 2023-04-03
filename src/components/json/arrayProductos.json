@@ -1,0 +1,56 @@
+[
+    { "id": 1, "nombre": "Bucket 8 piezas", "descripcion": "8 Piezas de pollo. Elegí nuestra tradicional Receta Original y/o la crujiente Receta Crispy ", "imagen": "https://kfc.com.ar/images/menues/1620751786Bucket%208%20Piezas.jpg", "precio": 1850, "stock": 13, "categoria": "buckets"
+    },
+    { "id": 2, "nombre": "Bucket de 12 piezas", "descripcion": "12 Piezas de pollo. Elegí­ nuestra tradicional Receta Original y/o la crujiente Receta Crispy", "imagen": "https://kfc.com.ar/images/menues/1620751804Bucket%2012%20Piezas.jpg", "precio": 1800, "stock": 19, "categoria": "buckets"
+    },
+    { "id": 3, "nombre": "BUCKET 11 ALITAS Y 11 STRIPS", "descripcion": "11 CRUJIENTES ALITAS Y 11 SABROSOS STRIP", "imagen": "https://kfc.com.ar/images/menues/1620751822Bucket%20Alitas%20y%20Strips.jpg", "precio": 1750, "stock": 13, "categoria": "buckets"
+    },
+    { "id": 4, "nombre": "BIG BOX DISCOVERY", "descripcion": " SUPER CRUNCH, 1 POPCORN SHAKER CHICO + SALSA, 2 ALITAS. INCLUYE PAPAS Y GASEOSA MEDIANAS.", "imagen": "https://kfc.com.ar/images/menues/1636568160Big%20Box%20Discovery.jpg", "precio": 1700, "stock": 10, "categoria": "boxes"
+    },
+    { "id": 5, "nombre": "BIG BOX AMERICANA", "descripcion": "1 SANDWICH CHEDDAR MELT SIMPLE CON PAPAS MEDIANAS, UNA ENSALADA AMERICANA CHICA Y BEBIDA MEDIANA.", "imagen": "https://kfc.com.ar/images/menues/1680012126Big%20Box%20Americana%20744x744.png", "precio": 1300, "stock": 10, "categoria": "boxes"
+    },
+    { "id": 6, "nombre": "BIG BOX RECARGADO", "descripcion": "2 ALITAS, 2 PIEZAS, 1 STRIPS. INCLUYE PAPAS Y GASEOSA MEDIANA.", "imagen": "https://kfc.com.ar/images/menues/1675962907recargado.jpg", "precio": 1200, "stock": 8, "categoria": "boxes"
+    },
+    { "id": 7, "nombre": "DÚO BOX RECARGADO", "descripcion": "2 ALITAS, 2 PIEZAS, 1 STRIPS. INCLUYE PAPAS Y GASEOSA MEDIANA.", "imagen": "https://kfc.com.ar/images/menues/1675962907recargado.jpg", "precio": 1200, "stock": 8, "categoria": "boxes"
+    },
+    { "id": 8, "nombre": "PIEZAS", "descripcion": "PIEZAS DE POLLO EMPANIZADAS CON NUESTRA TRADICIONAL RECETA ORIGINAL Y/O LA CRUJIENTE RECETA CRISPY. ELEGÍ LA COMBINACIÓN QUE MÁS TE GUSTE DE 2, 3 O 5 PIEZAS.", "imagen": "https://kfc.com.ar/images/menues/1545395217foto-web-piezasolas-3p.jpg", "precio": 1200, "stock": 15, "categoria": "piezas-snacks"
+    },
+    { "id": 9, "nombre": "ALITAS", "descripcion": "CRUJIENTES ALITAS EMPANIZADAS CON NUESTRA RECETA CRISPY.", "imagen": "https://kfc.com.ar/images/menues/1545395117foto-web-snaks-alitas.jpg", "precio": 1200, "stock": 9, "categoria": "piezas-snacks"
+    }
+    ,
+    { "id": 10, "nombre": "CRISPY STRIPS", "descripcion": "TIERNOS POR DENTRO, CRUJIENTES POR FUERA, ASÍ SON LOS RIQUÍSIMOS CRISPY STRIPS.", "imagen": "https://kfc.com.ar/images/menues/1545395040foto-web-snaks-solos-6strips.jpg", "precio": 1200, "stock":18, "categoria": "piezas-snacks"
+    }
+    ,
+    { "id": 11, "nombre": "POPCORN SHAKER", "descripcion": "TIERNOS BOCADOS DE POLLO EMPANIZADOS CON NUESTRA CRUJIENTE RECETA CRISPY, COMBINADOS CON NUESTRAS DELICIOSAS SALSAS BARBACOA, PICANTE O MOSTAZA-MIEL. LLEVALO EN SU TAMAÑO PEQUEÑO O GRANDE.", "imagen": "https://kfc.com.ar/images/menues/1545395463foto-web-snaks-popcorn-chico.jpg", "precio": 1200, "stock": 19, "categoria": "piezas-snacks"
+    }
+    ,
+    { "id": 12, "nombre": "GRAN BBQ BACON", "descripcion": "SANDWICH DE POLLO CRISPY CON LECHUGA, TOMATE, BACON, SALSA BBQ, QUESO Y PAN BRIOCHE.", "imagen": "https://kfc.com.ar/images/menues/1636564849Gran%20BBQ%20Bacon.jpg", "precio": 1200, "stock": 8, "categoria": "sandwiches"
+    }
+    ,
+    { "id": 13, "nombre": "SUPER CRUNCH", "descripcion": "SANDWICH DE POLLO CRISPY CON LECHUGA, TOMATE, MAYONESA, QUESO Y PAN BRIOCHE.", "imagen": "https://kfc.com.ar/images/menues/1636564883Supercrunch.jpg", "precio": 1200, "stock": 21, "categoria": "sandwiches"
+    }
+    ,
+    { "id": 14, "nombre": "CHEDDAR MELT", "descripcion": "SANDWICH DE POLLO CRISPY CON QUESO EN FETAS, QUESO CHEDDAR FUNDIDO, MAYONESA Y PAN BRIOCHE.", "imagen": "https://kfc.com.ar/images/menues/1636565030Cheddar%20Melt.jpg", "precio": 1200, "stock": 22, "categoria": "sandwiches"
+    }  
+    ,
+    { "id": 15, "nombre": "PAPAS FRITAS", "descripcion": "NUESTRAS TRADICIONALES PAPAS FRITAS", "imagen": "https://kfc.com.ar/images/menues/1545394030foto-web-acompa%C3%B1amientos-fritas.jpg", "precio": 1200, "stock": 14, "categoria": "acompañamientos"
+    }
+    ,
+    { "id": 16, "nombre": "PURÉ CON GRAVY", "descripcion": "PURÉ DE PAPAS CON DELICIOSA SALSA GRAVY", "imagen": "https://kfc.com.ar/images/menues/1545394011foto-web-acompa%C3%B1amientos-pure.jpg", "precio": 1200, "stock": 7, "categoria": "acompañamientos"
+    }
+    ,
+    { "id": 17, "nombre": "SUNDAE", "descripcion": "DELICIOSO HELADO CON SALSAS DE FRUTILLA, CHOCOLATE O DULCE DE LECHE.", "imagen": "https://kfc.com.ar/images/menues/1679508902Kreamball%20CHOCOLATE%20744.png", "precio": 1200, "stock": 14, "categoria": "postres"
+    }
+    ,
+    { "id": 18, "nombre": "SUNDAE FULL", "descripcion": "DELICIOSO HELADO CON SALSAS DE FRUTILLA, CHOCOLATE O DULCE DE LECHE. CON BASE CROCANTE DE CHOCOLATE.", "imagen": "https://kfc.com.ar/images/menues/1679508926Kreamball%20Full%20CHOCOLATE%20744.png", "precio": 1200, "stock": 16, "categoria": "postres"
+    }
+    ,
+    { "id": 19, "nombre": "AVALANCHA", "descripcion": "UNA AVALANCHA DE SABOR. ELEGILA CON CUBANITOS O TURRÓN CON MANÍ Y COMBINADA CON TU SALSA FAVORITA DE DULCE DE LECHE, CHOCOLATE O FRUTILLA.", "imagen": "https://kfc.com.ar/images/menues/1679508849Avalancha%20Cubanitos%20744.png", "precio": 1200, "stock": 18, "categoria": "postres"
+    }
+    ,
+    { "id": 20, "nombre": "CONO", "descripcion": "HELADO SOBRE CONO DE MASA DULCE", "imagen": "https://kfc.com.ar/images/menues/1545339863foto-web-postres-cono.jpg", "precio": 1200, "stock": 10, "categoria": "postres"
+    }
+    ,
+    { "id": 21, "nombre": "CONO RELLENO", "descripcion": "HELADO SOBRE CONO DE MASA DULCE RELLENO CON SALSA DE CHOCOLATE, DULCE DE LECHE O FRUTILLA.", "imagen": "https://kfc.com.ar/images/menues/1675370325KFC%20-%20Categor%C3%ADa%20Cono%20Relleno.jpg", "precio": 1200, "stock": 11, "categoria": "postres"
+    }
+]
