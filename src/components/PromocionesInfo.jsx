@@ -1,16 +1,16 @@
 import React from "react";
 
-const PromocionesInfo = () =>{
+const PromocionesInfo = () => {
     console.log("hola")
-    
 
-    return(
+
+    return (
         <div>
             {console.log("hola")
             }
         </div>
-    ) 
-       
+    )
+
 }
 
 

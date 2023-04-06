@@ -37,7 +37,7 @@ const Promociones = () => {
                         <img src="https://kfc.com.ar/images/promociones/1675965561Cup%C3%B3n%20Web%20-%20Tostado.jpg" alt="" />
                     </Link>
                 </div>
-                
+
             </div >
 
         </div>

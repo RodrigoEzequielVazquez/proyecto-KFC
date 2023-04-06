@@ -4,15 +4,15 @@ import LocalesList from "./LocalesList";
 
 
 
-const Locales = () =>{
+const Locales = () => {
 
-    const [locales,setLocales] = useState([])
+    const [locales, setLocales] = useState([])
 
     useEffect(() => {
         const promesa = new Promise((resolve) => {
             setTimeout(() => {
                 resolve(arrayLocales)
-            } );
+            });
 
         })
 
@@ -22,10 +22,10 @@ const Locales = () =>{
 
     }, [])
 
-    return(
+    return (
         <div>
             <div>
-                <LocalesList locales={locales}/>
+                <LocalesList locales={locales} />
             </div>
         </div>
     )

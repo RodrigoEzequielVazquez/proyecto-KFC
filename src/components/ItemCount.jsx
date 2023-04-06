@@ -22,7 +22,7 @@ const ItemCount = ({ stockItems }) => {
         if ((stock < 0) && (counter <= stock))
             console.log("Agregaste " + counter + " productos al carrito");
         setStock(stock - counter)
-        setCounter(stock- counter)
+        setCounter(stock - counter)
     }
 
     return (

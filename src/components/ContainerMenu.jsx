@@ -14,63 +14,64 @@ const ContainerMenu = () => {
 
                 <div id="containerProductos1">
 
-                    <Link to={"/menu/buckets"}>
-                        <div className="boxProduct">
+                    <div className="boxProduct">
+                        <Link to={"/menu/buckets"}>
                             <img src="https://kfc.com.ar/images/menues/1620751655KFC%20-%20Categor%C3%ADa%20Buckets.jpg" alt="" />
                             <div className="productsName">
                                 <b>BUCKETS</b>
                             </div>
-                        </div>
-                    </Link>
+                        </Link>
+                    </div>
 
-                    <Link to={"/menu/piezas-snacks"}>
-                        <div className="boxProduct">
+                    <div className="boxProduct">
+                        <Link to={"/menu/piezas-snacks"}>
                             <img src="https://kfc.com.ar/images/menues/1545340084cuadrados-portadas-piezas.jpg" alt="" />
                             <div className="productsName" >
                                 <b>PIEZAS Y SNACKS</b>
                             </div>
-                        </div>
-                    </Link>
+                        </Link>
+                    </div>
 
-                    <Link to={"/menu/acompañamientos"}>
-                        <div className="boxProduct">
+                    <div className="boxProduct">
+                        <Link to={"/menu/acompañamientos"}>
                             <img src="https://kfc.com.ar/images/menues/1636560553Menu%20Acompa%C3%B1amientos.jpg" alt="" />
                             <div className="productsName">
                                 <b>ACOMPAÑAMIENTOS</b>
                             </div>
-                        </div>
-                    </Link>
+                        </Link>
+                    </div>
+
 
                 </div >
 
                 <div id="containerProductos2">
 
-                    <Link to={"/menu/boxes"}>
-                        <div className="boxProduct">
+                    <div className="boxProduct">
+                        <Link to={"/menu/boxes"}>
                             <img src="https://kfc.com.ar/images/menues/1636548493DuoBox%20Recargado.jpg" alt="" />
                             <div className="productsName">
                                 <b>BOXES</b>
                             </div>
-                        </div>
-                    </Link>
+                        </Link>
+                    </div>
 
-                    <Link to={"/menu/sandwiches"}>
-                        <div className="boxProduct">
+                    <div className="boxProduct">
+                        <Link to={"/menu/sandwiches"}>
                             <img src="https://kfc.com.ar/images/menues/1636560271Menu%20Sandwiches%20.jpg" alt="" />
                             <div className="productsName">
                                 <b>SANDWICHES</b>
                             </div>
-                        </div>
-                    </Link>
+                        </Link>
+                    </div>
 
-                    <Link to={"/menu/postres"}>
-                        <div className="boxProduct">
+                    <div className="boxProduct">
+                        <Link to={"/menu/postres"}>
                             <img src="https://kfc.com.ar/images/menues/1679508810KFC%20-%20Categor%C3%ADa%20Postres%20V2%20-%20TEMP.jpg" alt="" />
                             <div className="productsName">
                                 <b>POSTRES</b>
                             </div>
-                        </div>
-                    </Link>
+                        </Link>
+                    </div>
 
                 </div>
             </div>

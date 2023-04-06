@@ -1,7 +1,7 @@
 import React from "react";
 
-const Error404 = () =>{
-    return(
+const Error404 = () => {
+    return (
         <div>
             <div className="container">
                 <div className="row my-5">
@@ -13,7 +13,7 @@ const Error404 = () =>{
             </div>
         </div>
     )
-    
+
 }
 
 export default Error404
