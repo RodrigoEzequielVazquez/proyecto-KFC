@@ -9,6 +9,7 @@ const Item = ({ item }) => {
                 <img src={item.imagen} className="card-img-top" height={250} alt={item.nombre} />
                 <div className="card-body">
                     <p className="card-text">{item.nombre}</p>
+                    <p> {item.descripcion}</p>
                 </div>
             </div>
         </Link>
