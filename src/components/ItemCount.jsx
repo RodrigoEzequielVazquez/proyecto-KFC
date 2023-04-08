@@ -1,29 +1,36 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
-const ItemCount = ({ stockItems }) => {
+const ItemCount = ({ stockItems, onAdd}) => {
 
-    console.log(stockItems);
     const [counter, setCounter] = useState(1)
-    const [stock, setStock] = useState(stockItems)
+    const [actualStock, setActualStock] = useState(stockItems)
+    const [vendido, setVendido] = useState(false)
 
     const incrementarStock = () => {
-        if (counter < stock) {
+        if (counter < actualStock) {
             setCounter(counter + 1)
+            setVendido(false)
         }
     }
 
     const decrementarStock = () => {
         if (counter > 1) {
             setCounter(counter - 1)
+            setVendido(false)
         }
     }
 
-    const onAdd = () => {
-        if ((stock < 0) && (counter <= stock))
-            console.log("Agregaste " + counter + " productos al carrito");
-        setStock(stock - counter)
-        setCounter(stock - counter)
+    const addToCart = (quantity) => {
+       setVendido(true)
+       setActualStock(actualStock - counter)
+       setCounter(1)
+       onAdd(quantity)
     }
+
+   useEffect(() =>{
+    setActualStock(stockItems)
+   },[stockItems])
 
     return (
         <div className="container text-center">
@@ -38,7 +45,7 @@ const ItemCount = ({ stockItems }) => {
             </div>
             <div className="row">
                 <div className="col-md-12">
-                    <button type="button" className="btn btn-outline-danger" onClick={onAdd}>Agregar al carrito</button>
+                    {vendido ? <Link to={"/cart" }className="btn btn-outline-danger" > Finalizar compra </Link> : <button type="button" className="btn btn-outline-danger" onClick={() =>addToCart(counter)}>Agregar al carrito</button>}
                 </div>
             </div>
         </div>
