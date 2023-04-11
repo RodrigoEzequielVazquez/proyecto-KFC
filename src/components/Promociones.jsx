@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "../css/promociones.css"
 import arrayLocales from "./json/arrayLocales.json"
 import promos from "./json/promo.json"
+import { Link } from "react-router-dom";
 
 const Promociones = () => {
 
@@ -39,9 +40,9 @@ const Promociones = () => {
                 {
                     promos.map((promo) =>
                         <div className="boxCupon" key={promo.nombre}>
-                            <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal" onClick={() => promoInfo(promo.nombre, promo.descuento)}>
+                            <Link href="" data-bs-toggle="modal" data-bs-target="#exampleModal" onClick={() => promoInfo(promo.nombre, promo.descuento)}>
                                 <img src={promo.img} alt={promo.nombre} />
-                            </a>
+                            </Link>
                         </div>
                     )
                 }
