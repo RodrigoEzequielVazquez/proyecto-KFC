@@ -1,0 +1,34 @@
+#contenedorTerminos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+#contenedorTerminos section {
+    width: 95%;
+    padding: 4rem 0;
+}
+
+#contenedorTerminos section div {
+    margin-bottom: 1rem;
+}
+
+#contenedorPrivacidad {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+#contenedorPrivacidad section {
+    width: 95%;
+    padding: 4rem 0;
+}
+
+#contenedorPrivacidad section ul {
+    list-style: none;
+    padding: 0;
+}
