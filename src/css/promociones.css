@@ -25,3 +25,21 @@
 .boxCupon img{
     width: 100%;
 }
+
+
+#modalTitle{
+   font-size: large; 
+}
+
+.modal-body h3{
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+ }
+
+.modal-body ul{
+   list-style: none;
+   font-size: 0.9rem;
+   padding: 0;
+   margin-top: 1rem;
+}
+
