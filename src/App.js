@@ -12,6 +12,8 @@ import ItemDetailContainer from "./components/ItemDetailContainer";
 import CartContextProvider from "./components/context/CartContext";
 import Cart from "./components/Cart";
 import Checkout from "./components/Checkout";
+import Terminos from "./components/Terminos";
+import Privacidad from "./components/Privacidad";
 
 function App() {
   return (
@@ -29,6 +31,8 @@ function App() {
             <Route path="/checkout" element={<Checkout />} />
             <Route path="/promociones" element={<Promociones />} />
             <Route path="/locales" element={<Locales />} />
+            <Route path="/terminos" element={<Terminos />} />
+            <Route path="/privacidad" element={<Privacidad />} />
             <Route path="*" element={<Error404 />} />
           </Routes>
           <Footer />
