@@ -16,7 +16,7 @@ const Footer = () => {
                 </div>
                 <div>
                     <p>Comunicacion</p>
-                    <Link to="/">Contacto</Link>
+                    <Link to="/contacto">Contacto</Link>
                 </div>
                 <div>
                     <p>RRHH</p>
