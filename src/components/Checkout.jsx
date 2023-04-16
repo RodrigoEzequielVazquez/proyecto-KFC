@@ -1,81 +1,53 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import { CartContext } from "./context/CartContext";
-import { addDoc, collection,doc, getFirestore, updateDoc } from "firebase/firestore"
-import Swal from 'sweetalert2'
+
 
 const Checkout = () => {
 
-    const { cart, sumTotal, clear } = useContext(CartContext)
+    const expresiones = {
+        correo: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
+        nombre: /^[a-zA-ZÀ-ÿ\s]{1,40}$/,
+        telefono: /^\d{8,10}$/
+    }
+
+    const { cart, sumTotal } = useContext(CartContext)
     const [nombre, setNombre] = useState("")
     const [email, setEmail] = useState("")
     const [telefono, setTelefono] = useState("")
-    const [orderId, setOrderId] = useState("")
+    const [btnState, setBtnState] = useState("disabled")
 
-    const generarOrden = () => {
-
-        Swal.fire({
-            title: "Esta por generar una nueva orden",
-            text: "Recuerde que debe retirar y abonar en el lugar hasta dentro de 24hrs",
-            showCancelButton: true,
-            confirmButtonColor: '#008000',
-            cancelButtonColor: '#d33',
-            confirmButtonText: "Confirmar",
-            cancelButtonText: "Cancelar"
-          }).then((result) => {
-            if (result.isConfirmed) {
-                const fecha = new Date()
-        
-                const orden = {
-                    fecha: fecha.toLocaleString(),
-                    cliente: { nombre: nombre, email: email, telefono: telefono },
-                    pedido: cart.map(item => ({
-                        precio_por_unidad: item.precio,
-                        cantidad: item.quantity,
-                        producto: item.nombre,
-                        
-                        
-                    })),
-                    sub_total: sumTotal(),
-                    descuento: 0,
-                    total: sumTotal()
-                    
-                }
-               
-                const db = getFirestore()
-                const ordersCollection = collection(db, "ordenes")
-                addDoc(ordersCollection, orden).then((snapShot) => {
-                    setOrderId(snapShot.id)
-                    const orderDoc = doc (db,"ordenes", snapShot.id)
-                    updateDoc(orderDoc,{total: orden.total * 0.9,descuento: orden.total * 0.1})
-                    clear()
-                })
-            }else
-            Swal.fire("Cancelaste la orden")
-     
-          })
-    }
+    useEffect(() => {
+        if (expresiones.correo.test(email) == true && expresiones.nombre.test(nombre) == true && expresiones.telefono.test(telefono) == true && cart.length > 0) {
+            setBtnState("")
+        }
+    })
 
     return (
+
         <div className="container">
             <div className="row my-5">
                 <div className="col">
                     <form>
                         <div className="mb-3">
                             <label htmlFor="nombre" className="form-label">Nombre *</label>
-                            <input type="text" className="form-control" placeholder="Ingrese su nombre" onInput={(e) => { setNombre(e.target.value) }} />
+                            <input type="text" className="form-control" placeholder="Ingrese su nombre" onInput={(e) => { setNombre(e.target.value)}} />
                         </div>
 
                         <div className="mb-3">
-                            <label htmlFor="email" className="form-label">Email</label>
+                            <label htmlFor="email" className="form-label">Email *</label>
                             <input type="email" className="form-control" placeholder="Ingrese su email" onInput={(e) => { setEmail(e.target.value) }} />
                         </div>
 
                         <div className="mb-3">
-                            <label htmlFor="telefono" className="form-label">Telefono</label>
-                            <input type="number" className="form-control" placeholder="Ingrese su telefono" onInput={(e) => { setTelefono(e.target.value) }} />
+                            <label htmlFor="telefono" className="form-label">Telefono *</label>
+                            <input type="text" className="form-control" placeholder="Ingrese su numero de celular" onInput={(e) => { setTelefono(e.target.value) }} />
                         </div>
 
-                        <button type="button" className="btn btn-danger" onClick={generarOrden}>Generar Orden</button>
+                        <div>
+                            <button type="button" className={`btn btn-danger ${btnState}`}><Link to={"/forma-de-pago"}>Seleccionar forma de pago</Link></button>
+                        </div>
+
                     </form>
 
                 </div>
@@ -98,15 +70,8 @@ const Checkout = () => {
                     </table>
                 </div>
             </div>
-            <div className="row-my-5">
-                <div className="col">
-                    {orderId ? <div className="alert alert-success text-center" role="alert">
-                        <h1>Se genero tu orden</h1>
-                        <p>Tu codigo de orden es: {orderId}</p>
-                    </div> : ""}
-                </div>
-            </div>
         </div>
+
     )
 }
 
