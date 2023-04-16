@@ -2,7 +2,6 @@ import React from "react";
 import '../css/localesList.css';
 
 const LocalesList = ({ locales }) => {
-    console.log(locales);
     return (
         <div id="contenedorLocales">
             {
@@ -20,7 +19,6 @@ const LocalesList = ({ locales }) => {
                         <div id="telefonoLocales">
                             <p>{local.telefono}</p>
                         </div>
-
                     </div>
 
                 )

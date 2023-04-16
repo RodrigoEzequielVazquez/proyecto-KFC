@@ -2,8 +2,6 @@ import React, { useState, useEffect } from "react";
 import arrayLocales from "./json/arrayLocales.json"
 import LocalesList from "./LocalesList";
 
-
-
 const Locales = () => {
 
     const [locales, setLocales] = useState([])

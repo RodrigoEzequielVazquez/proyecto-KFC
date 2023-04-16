@@ -1,13 +1,14 @@
 import React, { useContext } from "react";
 import { CartContext } from "./context/CartContext";
 import { Link } from "react-router-dom";
+import '../css/contenedores.css';
 
 const Cart = () => {
     const { cart, removeItem, clear, sumTotal, cartTotal } = useContext(CartContext)
 
     if (cartTotal() === 0) {
         return (
-            <div className="container py-5">
+            <div id="aumentarContenedor"> 
                 <div className="row">
                     <div className="col-md-12 text-center">
                         <div className="alert alert-danger" role="alert">No se encontraron productos en el carrito</div>
