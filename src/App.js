@@ -14,6 +14,10 @@ import Cart from "./components/Cart";
 import Checkout from "./components/Checkout";
 import Terminos from "./components/Terminos";
 import Privacidad from "./components/Privacidad";
+import Contacto from "./components/Contacto";
+import FormaPago from "./components/FormaPago";
+import FinCompra from "./components/FinCompra";
+import PagoTarjeta from "./components/PagoTarjeta";
 
 function App() {
   return (
@@ -29,8 +33,12 @@ function App() {
             <Route path="/menu/:menuId/:id" element={<ItemDetailContainer />} />
             <Route path="/cart" element={<Cart />} />
             <Route path="/checkout" element={<Checkout />} />
+            <Route path="/forma-de-pago" element={<FormaPago />} />
+            <Route path="/pago-tarjeta" element={<PagoTarjeta />} />
+            <Route path="/fin-de-compra" element={<FinCompra />} />
             <Route path="/promociones" element={<Promociones />} />
             <Route path="/locales" element={<Locales />} />
+            <Route path="/contacto" element={<Contacto />} />
             <Route path="/terminos" element={<Terminos />} />
             <Route path="/privacidad" element={<Privacidad />} />
             <Route path="*" element={<Error404 />} />
