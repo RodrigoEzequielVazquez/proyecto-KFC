@@ -25,9 +25,9 @@ const NavBar = () => {
                                 <li className="nav-item">
                                     <NavLink className="nav-link active" aria-current="page" to={"/locales"}>LOCALES</NavLink>
                                 </li>
-                                <form action={"/menu"}>
+                                <Link to={"/menu"}>
                                     <button className="btn btn-danger">PEDI EL MEJOR POLLO ONLINE</button>
-                                </form>
+                                </Link>
                             </ul>
                         </div>
                     </div>
