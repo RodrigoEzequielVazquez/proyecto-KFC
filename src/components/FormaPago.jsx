@@ -23,7 +23,6 @@ const FormaPago = () => {
     return (
         <div id="aumentarContenedor">  
             <div className="text-center">
-                <h2>Paga desde la app y recibi un 10% de descuento</h2>
                 <Link to={"/fin-de-compra"}><button className="btn btn-danger m-1">Pago en el local</button></Link>
                 <Link to={"/pago-tarjeta"}><button className="btn btn-danger m-1">Tarjeta de débito/credito</button></Link>
             </div>

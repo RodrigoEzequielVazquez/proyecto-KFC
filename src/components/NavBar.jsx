@@ -26,7 +26,7 @@ const NavBar = () => {
                                     <NavLink className="nav-link active" aria-current="page" to={"/locales"}>LOCALES</NavLink>
                                 </li>
                                 <Link to={"/menu"}>
-                                    <button className="btn btn-danger">PEDI EL MEJOR POLLO ONLINE</button>
+                                    <button className="btn btn-danger">PEDI ONLINE</button>
                                 </Link>
                             </ul>
                         </div>

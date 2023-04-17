@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { CartContext } from "./context/CartContext";
-
+import Swal from "sweetalert2";
 
 const PagoTarjeta = () => {
 
@@ -19,16 +19,25 @@ const PagoTarjeta = () => {
         correo: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
         telefono: /^\d{8,10}$/, // 10 a 14 numeros.
         tarjeta: /^\d{13,18}$/, // 13 a 18 numeros.
-        codigo:  /^\d{3}$/ // 3 numeros.
+        codigo: /^\d{3}$/ // 3 numeros.
     }
 
     useEffect(() => {
-        if (expresiones.nombre.test(nombre) == true && expresiones.apellido.test(apellido) == true && expresiones.correo.test(email) == true && expresiones.telefono.test(telefono) == true && expresiones.tarjeta.test(tarjeta) == true && expresiones.codigo.test(codigo) == true &&cart.length > 0) {
+        if (expresiones.nombre.test(nombre) === true && expresiones.apellido.test(apellido) === true && expresiones.correo.test(email) === true && expresiones.telefono.test(telefono) === true && expresiones.tarjeta.test(tarjeta) === true && expresiones.codigo.test(codigo) === true && cart.length > 0) {
             setBtnState("")
         }
     })
 
-    const { cart } = useContext(CartContext)
+    const compraConfirmada = () => {
+        Swal.fire({
+            title: "El pago se realizo de forma exitosa",
+            text: "Gracias por su compra",
+            confirmButtonColor: '#008000',
+            confirmButtonText: 'OK',
+        })
+    }
+
+    const { cart, sumTotal } = useContext(CartContext)
 
     if (cart.length === 0) {
         return (
@@ -51,17 +60,17 @@ const PagoTarjeta = () => {
                     <div className="col">
                         <div >
                             <label htmlFor="nombre" className="form-label">Nombre</label>
-                            <input type="text" className="form-control" placeholder="Ingrese su nombre" onInput={(e) => { setNombre(e.target.value)}} />
+                            <input type="text" className="form-control" placeholder="Ingrese su nombre" onInput={(e) => { setNombre(e.target.value) }} />
                         </div>
 
                         <div >
                             <label htmlFor="apellido" className="form-label">Apellido</label>
-                            <input type="text" className="form-control" placeholder="Ingrese su apellido" onInput={(e) => { setApellido(e.target.value)}} />
+                            <input type="text" className="form-control" placeholder="Ingrese su apellido" onInput={(e) => { setApellido(e.target.value) }} />
                         </div>
 
                         <div >
                             <label htmlFor="email" className="form-label">Email</label>
-                            <input type="email" className="form-control" placeholder="Ingrese su email" onInput={(e) => { setEmail(e.target.value)}} />
+                            <input type="email" className="form-control" placeholder="Ingrese su email" onInput={(e) => { setEmail(e.target.value) }} />
                         </div>
 
                     </div>
@@ -70,17 +79,17 @@ const PagoTarjeta = () => {
 
                         <div >
                             <label htmlFor="telefono" className="form-label">Telefono</label>
-                            <input type="text" className="form-control" placeholder="Ingrese su numero de celular" onInput={(e) => { setTelefono(e.target.value)}} />
+                            <input type="text" className="form-control" placeholder="Ingrese su numero de celular" onInput={(e) => { setTelefono(e.target.value) }} />
                         </div>
 
                         <div >
                             <label htmlFor="tarjeta" className="form-label">Num.Tarjeta</label>
-                            <input type="text" className="form-control" placeholder="Ingrese el numero de la tarjeta" onInput={(e) => { setTarjeta(e.target.value)}} />
+                            <input type="text" className="form-control" placeholder="Ingrese el numero de la tarjeta" onInput={(e) => { setTarjeta(e.target.value) }} />
                         </div>
 
                         <div >
                             <label htmlFor="codigo" className="form-label">Cod. seguridad</label>
-                            <input type="text" className="form-control" placeholder="Ingrese el codgio de 3 digitos" onInput={(e) => { setCodigo(e.target.value)}} />
+                            <input type="text" className="form-control" placeholder="Ingrese el codgio de 3 digitos" onInput={(e) => { setCodigo(e.target.value) }} />
                         </div>
 
                     </div>
@@ -88,7 +97,8 @@ const PagoTarjeta = () => {
                 </div>
 
                 <div className="text-center">
-                    <button type="button" className={`btn btn-danger ${btnState}`}><Link to={"/fin-de-compra"}>Finalizar compra</Link></button>
+                    <button type="button" className={`btn btn-danger ${btnState}`} onClick={compraConfirmada}><Link to={"/fin-de-compra"}>Confirmar pago</Link></button>
+                    <p><b>Total: ${sumTotal()}</b></p>
                 </div>
 
             </form>
