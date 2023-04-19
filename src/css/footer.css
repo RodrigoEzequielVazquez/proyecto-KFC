@@ -15,6 +15,10 @@ a{
     justify-content: center;
 }
 
+.iconoFooter img{
+    width: 5rem;
+}
+
 .infoFooter{
     margin-top: 1.2rem;
     display: flex;
@@ -61,5 +65,85 @@ a{
     margin-top: 1rem;
     display: flex;
     justify-content: center;
-
 }
+
+hr{
+    width: 94%;
+    display: none;
+}
+
+@media screen and (max-width:480px){
+    .iconoFooter img{
+        display: flex;
+        justify-content: center;
+        width: 10rem;
+    }
+
+    .infoFooter{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .infoFooter div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 0.5rem;
+    }
+
+    .infoFooter div p{
+        display: none;
+    }
+
+    .containerRedesTerminos{
+        margin-top: 1.2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .terminosFooter{
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+    }
+
+    .terminosFooter div{
+        width: 50%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .terminosFooter p{
+        font-size: small; 
+        margin-bottom: 0;
+    }
+
+    .redesFooter{
+        height: 2rem;
+        width: 60%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .redesFooter a{
+        height: 100%;
+        width: 1.6rem;
+    }
+
+    .redesFooter img{
+        height: 100%;
+        width: 1.6rem;
+    }
+
+    .redesFooter .facebook{
+        height: 100%;
+        width: 2.5rem;
+    }
+
+    hr{
+        display: block;
+    }
+ 
+   }
