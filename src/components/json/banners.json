@@ -1,0 +1,24 @@
+[
+    { "nombre": "buckets", "img": "https://kfc.com.ar/images/pages/1620751729Cover%20Bucket%201598x498.jpg" },
+
+    {
+        "nombre": "boxes", "img": "https://kfc.com.ar/images/pages/1636559815Portada%20Boxes.jpg"
+    },
+
+    {
+        "nombre": "piezas-snacks", "img": "https://kfc.com.ar/images/pages/1545317515portada-web-combos.jpg"
+    },
+
+    {
+        "nombre": "sandwiches", "img": "https://kfc.com.ar/images/pages/1636560271Cover%20Sandwiches.jpg"
+    },
+
+    {
+        "nombre": "acompañamientos", "img": "https://kfc.com.ar/images/pages/1681481555papas%202.jpg"
+    },
+
+    {
+        "nombre": "postres", "img": "https://kfc.com.ar/images/pages/1679508810KFC%20WEB%20-%20Portada%20Postres%20V2%20-%20TEMP.jpg"
+    }
+
+]
