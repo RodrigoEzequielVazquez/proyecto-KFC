@@ -3,6 +3,7 @@ import ItemList from "./itemList";
 import { useParams } from "react-router-dom";
 import { collection, getDocs, getFirestore, where, query } from "firebase/firestore";
 import Loading from "./Loading";
+import arrayBanners from "./json/banners.json"
 
 const ItemListContainer = () => {
 
@@ -19,12 +20,20 @@ const ItemListContainer = () => {
                 ({ id: prod.id, ...prod.data() })))
             setLoading(false)
         })
+
     }, [menuId])
 
+    const bannerCategory = arrayBanners.find(el => el.nombre === menuId)
+    console.log(bannerCategory.img);
+
     return (
-        <div className="container py-5">
-            <div className="row">
-                {loading ? <Loading /> : <ItemList items={items} />}
+        <div id="containerProductos">
+            <div><img src={bannerCategory.img} alt={bannerCategory.nombre} className=" w-100"/>
+            </div>
+            <div className="container py-5">
+                <div className="row">
+                    {loading ? <Loading /> : <ItemList items={items} />}
+                </div>
             </div>
         </div>
 
