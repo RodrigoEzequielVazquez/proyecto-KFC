@@ -1,0 +1,13 @@
+#responsiveCart{
+    display: none;
+}
+
+@media screen and (max-width:370px){
+    #responsiveCart{
+        display: block;
+    } 
+
+    #principalCart{
+        display: none;
+    } 
+   }
