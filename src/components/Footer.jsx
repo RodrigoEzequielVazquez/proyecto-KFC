@@ -33,7 +33,7 @@ const Footer = () => {
 
                     <Link to="https://www.instagram.com/kfc_argentina/" target={"_blank"} rel="noreferrer"><img src="icons/instagram.svg" alt="Icono Instagram" /></Link>
 
-                    <Link to="https://www.youtube.com/channel/UCFVMW8vKJP_DQd2F0ZIBIfQ" target={"_blank"} rel="noreferrer"><img src="icons/youTube.svg" alt="Icono YouTube" /></Link>
+                    <Link to="https://www.youtube.com/channel/UCFVMW8vKJP_DQd2F0ZIBIfQ" target={"_blank"} rel="noreferrer"><img src="icons/youtube.svg" alt="Icono YouTube" /></Link>
 
                 </div>
 
