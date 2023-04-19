@@ -23,7 +23,7 @@ const Promociones = () => {
     const validarMail = (e) => {
         setEmail(true)
         if (expresiones.correo.test(e.target.value)) {
-            setModalBody("La solicitud de la promocion fue exitosa. Pronto recibiras el codigo en " + e)
+            setModalBody("La solicitud de la promocion fue exitosa. Pronto recibiras el codigo en " + e.target.value)
         }
 
     }
