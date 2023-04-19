@@ -5,46 +5,47 @@
 
 #containerMenu{
     height: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-#containerProductos{
+#containerCategoria{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     width: 100%;
     justify-content: center;
 }
-#containerProductos .boxProduct{
-    margin-bottom: 1rem;
+#containerCategoria .boxProduct{
+    margin: 0.3rem;
 }
 
 .boxProduct{
-    width: 95%;
+    width: 35%;
     background-color: white;
 }
 
-#containerProductos img{
+#containerCategoria img{
     width: 100%;
+    opacity: 0.8;
+}
+
+#containerCategoria img:hover{
+    opacity: 1;
 }
 
 .productsName {
     font-size: 0.8rem;
     overflow: hidden;
     width: 100%;
+    opacity: 1;
 }
 
-#containerProductos1{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 100%; 
+.productsName:hover {
+    opacity: 0.6; 
 }
 
-#containerProductos2{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 100%; 
-}
+
+
